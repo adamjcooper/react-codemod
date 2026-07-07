@@ -1,10 +1,8 @@
-type Props = { a: 1 };
-
 const MyInput = (
   {
     ref,
     ...props
-  }: Props & {
+  }: (TextProps | NumberProps) & {
     ref?: React.Ref<HTMLInputElement>
   }
 ) => {
